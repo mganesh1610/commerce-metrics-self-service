@@ -20,6 +20,10 @@ UCI workbook → validated row-preserving bronze CSV → typed PySpark facts →
 
 The same workflow runs without cloud credentials. Review changes to monetary definitions, ingestion or cohort eligibility in a pull request. Re-run boundary tests and source-to-mart reconciliation before accepting a change. AI assisted authoring does not substitute for these checks.
 
+## Executed results
+
+The full run processed 541,909 source lines into 314 month/country groups and 91 cohort cells across 13 observed months. All 13 reconciliation checks and seven boundary tests passed. Source hash, exact totals and local Spark execution settings are recorded in `results/validation.json`; the dashboard's month/country filters and partial-month warning were also checked in Chrome.
+
 ## Data and scope
 
 Primary: [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail), Daqing Chen (2015), DOI 10.24432/C5BW33, CC BY 4.0. It contains historical UK retailer invoice lines. The downloaded artifact hash and observed counts are recorded in `results/validation.json`.

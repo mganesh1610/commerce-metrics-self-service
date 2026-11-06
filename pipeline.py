@@ -58,7 +58,7 @@ def prepare(data_dir):
     totals = {"rows": 0, "net_minor": 0, "gross_minor": 0, "returns_minor": 0, "negative_price_rows": 0, "missing_customer_rows": 0}
     dates = []
     with csv_path.open("w", newline="") as stream:
-        writer = csv.writer(stream)
+        writer = csv.writer(stream, lineterminator="\n")
         writer.writerow(HEADERS)
         for i, row in enumerate(rows, 1):
             invoice, stock, desc, qty, at, price, customer, country = row
@@ -161,7 +161,7 @@ def run(data_dir, output_dir):
         checks["sqlite_integrity"] = con.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
     for name, rows in [("monthly_metrics", metrics), ("cohort_retention", cohorts)]:
         with (output_dir / f"{name}.csv").open("w", newline="") as stream:
-            w = csv.DictWriter(stream, fieldnames=list(rows[0]))
+            w = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
             w.writeheader(); w.writerows(rows)
     (output_dir / "metrics.json").write_text(json.dumps(metrics, indent=2) + "\n")
     validation = {"source": controls, "execution": {"engine": spark.version, "master": "local[2]", "distributed_cluster_benchmark": False},
