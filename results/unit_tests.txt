@@ -1,0 +1,12 @@
+test_decimal_half_up (test_pipeline.MetricBoundaries.test_decimal_half_up) ... ok
+test_missing_customer_not_in_cohorts (test_pipeline.MetricBoundaries.test_missing_customer_not_in_cohorts) ... ok
+test_negative_price_quarantined (test_pipeline.MetricBoundaries.test_negative_price_quarantined) ... ok
+test_return_reduces_sales (test_pipeline.MetricBoundaries.test_return_reduces_sales) ... ok
+test_returns_and_repeat_lines_do_not_inflate_retention (test_pipeline.MetricBoundaries.test_returns_and_repeat_lines_do_not_inflate_retention) ... ok
+test_zero_denominator_unavailable (test_pipeline.MetricBoundaries.test_zero_denominator_unavailable) ... ok
+test_zero_price_retained (test_pipeline.MetricBoundaries.test_zero_price_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

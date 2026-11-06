@@ -1,0 +1,42 @@
+{
+  "source": {
+    "rows": 541909,
+    "net_minor": 976987205,
+    "gross_minor": 1066668454,
+    "returns_minor": 89681249,
+    "negative_price_rows": 2,
+    "missing_customer_rows": 135080,
+    "source_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+    "source_documentation": "https://archive.ics.uci.edu/dataset/352/online+retail",
+    "source_sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+    "date_min": "2010-12-01",
+    "date_max": "2011-12-09"
+  },
+  "execution": {
+    "engine": "4.0.1",
+    "master": "local[2]",
+    "distributed_cluster_benchmark": false
+  },
+  "monthly_country_groups": 314,
+  "months": 13,
+  "cohort_cells": 91,
+  "checks": {
+    "python_spark_rows": true,
+    "python_spark_net_minor": true,
+    "python_spark_gross_minor": true,
+    "python_spark_returns_minor": true,
+    "mart_line_count": true,
+    "mart_financial_reconciliation": true,
+    "gross_less_returns_equals_net": true,
+    "unique_ingestion_keys": true,
+    "cohort_rates_in_range": true,
+    "cohort_initial_rates": true,
+    "missing_ids_retained_financials": true,
+    "sqlite_financial_parity": true,
+    "sqlite_integrity": true
+  },
+  "passed": 13,
+  "failed": 0,
+  "partial_month": "2011-12",
+  "evidence_boundary": "Public historical retailer data. No payment authorization, causal lift, production deployment, stakeholder adoption or employer outcome is established."
+}
