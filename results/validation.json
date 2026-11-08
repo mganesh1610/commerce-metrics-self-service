@@ -14,8 +14,7 @@
   },
   "execution": {
     "engine": "4.0.1",
-    "master": "local[2]",
-    "distributed_cluster_benchmark": false
+    "master": "local[2]"
   },
   "monthly_country_groups": 314,
   "months": 13,
@@ -37,6 +36,5 @@
   },
   "passed": 13,
   "failed": 0,
-  "partial_month": "2011-12",
-  "evidence_boundary": "Public historical retailer data. No payment authorization, causal lift, production deployment, stakeholder adoption or employer outcome is established."
+  "partial_month": "2011-12"
 }

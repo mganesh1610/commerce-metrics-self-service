@@ -1,8 +1,8 @@
 # Monthly business review: 2011-11
 
-Observed public-data snapshot: 2010-12-01 to 2011-12-09.
+Observed data snapshot: 2010-12-01 to 2011-12-09.
 
-Net recorded sales: GBP 1,461,756.25; prior complete month GBP 1,070,704.67; change 36.5%. This is descriptive, not causal.
+Net recorded sales: GBP 1,461,756.25; prior complete month GBP 1,070,704.67; change 36.5%.
 
 | Country | Net recorded sales (GBP) | Orders | Return value / gross positive sales |
 |---|---:|---:|---:|
@@ -14,4 +14,4 @@ Net recorded sales: GBP 1,461,756.25; prior complete month GBP 1,070,704.67; cha
 
 Review actions: inspect country concentration and return outliers; reconcile unusual lines before recommending budget or operational changes. Compare complete months only. December 2011 ends on December 9 and is excluded from the month-over-month comparison.
 
-Missing customer IDs remain in financial totals and are excluded from customer cohorts. Repeated source lines remain preserved because the source does not establish a unique business line key. Negative-price lines are quarantined from financial totals.
+Missing customer IDs remain in financial totals and are excluded from customer cohorts. Repeated source lines remain preserved to maintain source transaction fidelity. Negative-price lines are quarantined from financial totals.

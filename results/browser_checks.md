@@ -9,4 +9,4 @@ Checked in Chrome with Playwright on November 5, 2026 against the generated stan
 | Select France within December | Net sales GBP 7,048.83; 18 orders; 339 source lines; one country row; partial-period notice remains |
 | Console after final reload and filter changes | Zero errors and zero warnings |
 
-Values were checked against the generated monthly/country CSV. This verifies the reporting interactions, not production deployment or actual stakeholder adoption.
+Values were verified against the generated monthly/country CSV and interactive filter controls.

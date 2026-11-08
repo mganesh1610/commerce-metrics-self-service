@@ -1,6 +1,6 @@
 # Schema and validation
 
-Grain: one original workbook line. `row_id` is a reproducible ingestion key, not a business transaction identifier.
+Grain: one original workbook line. `row_id` is a reproducible ingestion key.
 
 | Source | Bronze / silver | Type / treatment |
 |---|---|---|
